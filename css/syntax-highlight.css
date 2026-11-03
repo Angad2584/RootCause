@@ -1,0 +1,44 @@
+/* Token colors for js/highlight.js (self-hosted, no CDN highlighter) */
+
+.tok-keyword   { color: #ff7b72; }
+.tok-string    { color: #a5d6ff; }
+.tok-number    { color: #79c0ff; }
+.tok-comment   { color: #8b949e; font-style: italic; }
+.tok-function  { color: #d2a8ff; }
+.tok-flag      { color: #ffa657; }
+.tok-variable  { color: #79c0ff; }
+.tok-operator  { color: #ff7b72; }
+.tok-punct     { color: #8b949e; }
+.tok-ip        { color: #39d98a; }
+.tok-hash      { color: #d29922; }
+
+[data-theme="light"] .tok-keyword   { color: #cf222e; }
+[data-theme="light"] .tok-string    { color: #0a3069; }
+[data-theme="light"] .tok-number    { color: #0550ae; }
+[data-theme="light"] .tok-comment   { color: #6e7781; }
+[data-theme="light"] .tok-function  { color: #8250df; }
+[data-theme="light"] .tok-flag      { color: #953800; }
+[data-theme="light"] .tok-variable  { color: #0550ae; }
+[data-theme="light"] .tok-operator  { color: #cf222e; }
+[data-theme="light"] .tok-ip        { color: #1a7f4e; }
+[data-theme="light"] .tok-hash      { color: #9a6700; }
+
+/* mobile nav drawer */
+.mobile-nav {
+  display: none;
+  position: fixed;
+  inset: var(--header-h) 0 0 0;
+  background: var(--bg);
+  z-index: 99;
+  padding: 24px;
+  border-top: 1px solid var(--border);
+}
+.mobile-nav.open { display: block; }
+.mobile-nav ul { list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 4px; }
+.mobile-nav a {
+  display: block;
+  padding: 14px 4px;
+  font-size: 1.1rem;
+  color: var(--text);
+  border-bottom: 1px solid var(--border);
+}

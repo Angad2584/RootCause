@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Root Cause | Digital Forensics &amp; Incident Response</title>
+  <meta name="description" content="Investigation write-ups in digital forensics and incident response: Windows, Linux, macOS, mobile, and email case studies.">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/syntax-highlight.css">
+</head>
+<body data-posts-json="posts.json">
+
+  <header class="site-header">
+    <div class="container">
+      <a href="index.html" class="brand"><span class="prompt">~$</span>&nbsp;root-cause<span class="cursor"></span></a>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="index.html" class="active">Home</a></li>
+          <li><a href="posts/index.html">Posts</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="nav-actions">
+        <button class="theme-toggle" data-theme-toggle aria-label="Toggle dark/light theme">
+          <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"/></svg>
+          <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg>
+        </button>
+        <button class="nav-burger" data-nav-burger aria-label="Toggle menu">
+          <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 12h18M3 6h18M3 18h18"/></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <div class="mobile-nav" data-mobile-nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="posts/index.html">Posts</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </div>
+
+  <main>
+    <section class="hero">
+      <div class="container">
+        <p class="eyebrow">// digital forensics &amp; incident response</p>
+        <h1>I investigate how systems get compromised, then write down exactly how I proved it.</h1>
+        <p class="lede">
+          I'm a DFIR analyst working across Windows, Linux, macOS, and mobile endpoints. This is a
+          field notebook of real investigation methodology: how an intrusion is scoped, which
+          artifacts survive, and how scattered log entries turn into a defensible timeline.
+          DFIR matters because attribution and containment decisions are only as good as the
+          evidence chain behind them — every post here tries to show that chain end to end,
+          not just the conclusion.
+        </p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="posts/2026-01-15-pass-the-hash-lateral-movement.html">Read the latest investigation →</a>
+          <a class="btn btn-ghost" href="about.html">About me</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="section-head">
+          <h2>Latest investigations</h2>
+          <a class="view-all" href="posts/index.html">view all posts →</a>
+        </div>
+        <div id="latest-posts" class="post-grid" data-limit="3">
+          <p class="empty-state">// loading posts…</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" style="border-top:1px solid var(--border);">
+      <div class="container">
+        <div class="section-head"><h2>What you'll find here</h2></div>
+        <ul class="skill-list" style="display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:14px;">
+          <li>Full investigation narratives — not sanitized Q&amp;A writeups</li>
+          <li>Annotated screenshots of real tool output</li>
+          <li>Attack-flow and artifact-correlation diagrams</li>
+          <li>Interactive, sortable evidence correlation tables</li>
+          <li>Key artifacts &amp; references at the end of every case</li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <span>© 2026 Root Cause. Built with plain HTML/CSS/JS.</span>
+      <div class="footer-links">
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+        <a href="posts/index.html">Posts</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script src="js/filter.js"></script>
+</body>
+</html>

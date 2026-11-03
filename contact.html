@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact | Root Cause</title>
+  <meta name="description" content="Get in touch — email, GitHub, LinkedIn, and PGP key.">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/syntax-highlight.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container">
+      <a href="index.html" class="brand"><span class="prompt">~$</span>&nbsp;root-cause<span class="cursor"></span></a>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="posts/index.html">Posts</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html" class="active">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="nav-actions">
+        <button class="theme-toggle" data-theme-toggle aria-label="Toggle dark/light theme">
+          <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"/></svg>
+          <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg>
+        </button>
+        <button class="nav-burger" data-nav-burger aria-label="Toggle menu">
+          <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 12h18M3 6h18M3 18h18"/></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <div class="mobile-nav" data-mobile-nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="posts/index.html">Posts</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </div>
+
+  <main>
+    <div class="page-header">
+      <div class="container">
+        <h1>Contact</h1>
+        <p>Case tips, corrections, or collaboration — reach out through any of these.</p>
+      </div>
+    </div>
+
+    <div class="container section">
+      <div class="contact-methods">
+        <a class="contact-card reveal" href="mailto:you@example.com">
+          <div class="label">Email</div>
+          <div class="value">you@example.com</div>
+        </a>
+        <a class="contact-card reveal" href="https://github.com/yourhandle" target="_blank" rel="noopener">
+          <div class="label">GitHub</div>
+          <div class="value">@yourhandle</div>
+        </a>
+        <a class="contact-card reveal" href="https://linkedin.com/in/yourhandle" target="_blank" rel="noopener">
+          <div class="label">LinkedIn</div>
+          <div class="value">/in/yourhandle</div>
+        </a>
+        <a class="contact-card reveal" href="https://twitter.com/yourhandle" target="_blank" rel="noopener">
+          <div class="label">Twitter / X</div>
+          <div class="value">@yourhandle</div>
+        </a>
+      </div>
+
+      <div class="reveal" style="margin-top:36px;">
+        <h3 style="color:var(--text-bright);">PGP</h3>
+        <p style="color:var(--text-dim);">For sensitive disclosures, encrypt with my public key.</p>
+        <pre><code>-----BEGIN PGP PUBLIC KEY BLOCK-----
+
+[ paste your ASCII-armored public key here ]
+
+-----END PGP PUBLIC KEY BLOCK-----</code></pre>
+      </div>
+
+      <p style="color:var(--text-dim); font-family:var(--font-mono); font-size:0.85rem; margin-top:24px;">
+        // this is a static site with no backend — the form-free contact cards above are intentional.
+        Swap in a service like Formspree if you want an in-page contact form later.
+      </p>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <span>© 2026 Root Cause. Built with plain HTML/CSS/JS.</span>
+      <div class="footer-links">
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+        <a href="posts/index.html">Posts</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script src="js/highlight.js"></script>
+</body>
+</html>
